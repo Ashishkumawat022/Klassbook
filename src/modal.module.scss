@@ -1,0 +1,98 @@
+.modalCts {
+
+    :global(.modal-dialog) {
+        
+        :global(.modal-content) {
+            border: none;
+            background-color: #F3F4F9;
+            
+            :global(.modal-body) {
+                padding: 30px 30px;
+
+                .closeIcon {
+                    position: absolute;
+                    right: 5px;
+                    top: 5px;
+                    background: #f3f4f9;
+                    border: none;
+                    width: 40px;
+                    height: 40px;
+                    padding: 5px 5px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50px;
+                    font-size: 25px;
+                }
+
+                .title {
+                    text-align: center;
+                    margin-bottom: 30px;
+            
+                    h5 {
+                        font-size: 20px;
+                        font-weight: 600;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    &.modalBg {
+        
+        :global(.modal-dialog) {
+
+            :global(.modal-content) {
+                background-color: #ffffff;
+
+                
+            :global(.modal-body) {
+
+                .closeIcon {
+                    background: #fff;
+                }
+
+                    :global(.form-control) , :global(.form-select){
+                        background-color: #F3F4F9;
+                        border: 1px solid #F3F4F9;
+                    }
+
+                    .contentTaps{
+                        background-color: #F3F4F9;
+                        padding: 25px 25px;
+                        margin-bottom: 20px;
+                        border: 1px solid #CDD2DE;
+                
+                        :global(.form-control) , :global(.form-select){
+                            background-color: #ffffff !important;
+                            border: 1px solid #E3E7EE !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (min-width: 576px){
+
+    .modalCts {
+
+        :global(.modal-dialog) {
+            max-width: 750px;
+        }
+    }
+    .modalSizeLg{
+
+        :global(.modal-dialog) {
+            max-width: 860px !important;
+        }
+        
+    }
+    
+    
+
+}

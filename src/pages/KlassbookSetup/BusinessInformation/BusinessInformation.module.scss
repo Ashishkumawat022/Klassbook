@@ -1,0 +1,112 @@
+.uploadData {
+  h5 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: flex;
+      color: #7f8699;
+      line-height: 25px;
+      font-size: 14px;
+
+      span {
+        width: 100px;
+      }
+      strong {
+        color: #1d1d1d;
+        font-weight: 600;
+      }
+      a {
+        color: var(--Main);
+        text-decoration: none;
+      }
+    }
+  }
+}
+.addRow {
+  text-decoration: none;
+  color: var(--Main);
+  justify-content: end;
+  display: flex;
+
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0em;
+
+  &:hover {
+    color: var(--Main);
+  }
+}
+
+.alerttab {
+  display: flex;
+  background: #fff9f7;
+  align-items: center;
+  border-radius: 8px;
+  justify-content: space-between;
+  border-left: 4px solid var(--Main);
+
+  h5 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  p {
+    margin: 0px !important ;
+    font-size: 13px;
+  }
+  img {
+    padding-right: 15px;
+    height: 48px;
+    width: 51px;
+  }
+
+  button {
+    background-color: var(--Main);
+    border: none;
+    color: white;
+    border-radius: 8px;
+    padding: 8px;
+    font-size: 13px;
+    display: flex;
+    width: 60px;
+    justify-content: center;
+  }
+}
+
+.alertclosetab{
+  background: #fff9f7;
+  border-radius: 8px;
+  border-left: 4px solid var(--Main) !important;
+  color: black;
+  border: none;
+
+  p{
+    margin: 0;
+    font-size: 13px;
+  }
+
+  button{
+  }
+}
+
+/*=======================================================
+//////////////RESPONSIVE MEDIA QUERY START///////////////
+=======================================================*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .alerttab {
+    h5 {
+      font-size: 14px;
+    }
+    p {
+      font-size: 10px;
+    }
+  }
+}

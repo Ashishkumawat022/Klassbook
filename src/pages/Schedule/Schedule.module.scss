@@ -1,0 +1,123 @@
+.event_view {
+  background-color: #c2c7d64d;
+  border-radius: 6px;
+  border-left: 3px solid #f9560f;
+  height: 40px;
+  margin: 6px 0px;
+  color: #000;
+  font-weight: 500;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  padding: 0px 12px;
+  margin-left: 5px;
+}
+
+.myCustomHeight {
+  :global(.rbc-toolbar) {
+    :global(.rbc-btn-group) {
+      button {
+        background-color: transparent !important;
+        border: none !important;
+        background: linear-gradient(0deg, #f3f4f9, #f3f4f9),
+          linear-gradient(0deg, #efeef3, #efeef3),
+          linear-gradient(0deg, #efeef3, #efeef3),
+          linear-gradient(
+            180deg,
+            rgba(239, 238, 243, 0.27) 0%,
+            rgba(239, 238, 243, 0.29) 100%
+          ),
+          #dde1eb;
+        box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        border: none;
+        color: #7f8699 !important;
+        min-width: 80px;
+        height: 35px;
+        line-height: 35px;
+        padding: 0px;
+        font-size: 14px;
+        margin-right: 10px;
+
+        &:active {
+          border: 1px solid #f9560f !important;
+          color: var(--Main) !important;
+          background-color: var(--Main) !important;
+        }
+        &:focus {
+          border: 1px solid var(--Main) !important;
+          color: var(--Main) !important;
+          background-color: var(--Main) !important;
+        }
+
+      }
+      
+    }
+
+    :global(.rbc-toolbar-label){
+        color: var(--Main);
+    }
+  }
+  :global(.rbc-time-header-content) {
+    :global(.rbc-header) {
+      button {
+        background-color: transparent !important;
+        border: none !important;
+        background: linear-gradient(0deg, #f3f4f9, #f3f4f9),
+          linear-gradient(0deg, #efeef3, #efeef3),
+          linear-gradient(0deg, #efeef3, #efeef3),
+          linear-gradient(
+            180deg,
+            rgba(239, 238, 243, 0.27) 0%,
+            rgba(239, 238, 243, 0.29) 100%
+          ),
+          #dde1eb;
+        box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        border: none;
+        color: #7f8699 !important;
+        min-width: 170px;
+        height: 35px;
+        line-height: 35px;
+        padding: 0px 5px;
+        font-size: 14px;
+        margin: 12px 8px;
+
+        &:active {
+          border: 1px solid #f9560f !important;
+          color: #f9560f !important;
+          background-color: var(--Main) !important;
+        }
+        &:focus {
+          border: 1px solid var(--Main) !important;
+          color: var(--Main) !important;
+          background-color: var(--Main) !important;
+        }
+      }
+    }
+  }
+  :global(.rbc-row-content) {
+    :global(.rbc-date-cell) {
+      button {
+        background-color: transparent !important;
+        border: none !important;
+        min-width: 80px;
+        height: 35px;
+        line-height: 35px;
+        padding: 0px;
+        font-size: 14px;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  :global(.rbc-day-slot){
+    :global(.rbc-events-container){
+        bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 10px;
+    top: -4px !important;
+    }
+  }
+}

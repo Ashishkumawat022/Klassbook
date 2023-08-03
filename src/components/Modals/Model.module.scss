@@ -1,0 +1,158 @@
+
+
+.studenteditIcon {
+    max-width: 290px;
+    min-width: 135px;
+    height: 41px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    // background: linear-gradient(0deg, #F3F4F9, #F3F4F9), linear-gradient(0deg, #EFEEF3, #EFEEF3), linear-gradient(0deg, #EFEEF3, #EFEEF3), linear-gradient(180deg, rgba(239, 238, 243, 0.27) 0%, rgba(239, 238, 243, 0.29) 100%), #DDE1EB !important;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    border: none;
+    color: var(--Main)!important;
+    padding: 5px 10px;
+    font-size: 14px;
+    margin-left: 10px;
+    float: right;
+    background-color: #ffffff !important;
+  }
+
+
+  .formFieldcheckbox{
+    display: flex !important;
+    align-items: center;
+    
+    font-size: 14px;
+    
+    input{
+        height: 18px;
+        width: 20px;
+        margin-right: 6px;
+        border-radius: 8px;
+       
+    }
+
+  }
+
+  .btnlist{
+    ul{
+        display: flex;
+        padding: 0;
+        flex-wrap: wrap !important;
+    }
+    li{
+        list-style: none;
+        padding-right: 5px;
+        padding-top: 10px;
+    }
+   
+  }
+  .btnlist2{
+    ul{
+        display: flex;
+        padding: 0;
+        justify-content: right;
+    }
+    li{
+        list-style: none;
+        padding-right: 5px;
+        padding-top: 10px;
+    }
+  }
+
+  .phoneNumber {
+
+    :global(.flag-dropdown) {
+      background: transparent !important;
+
+      :global(.selected-flag) {
+        border: none !important;
+
+        &:hover {
+          background: #F3F4F9 !important;
+        }
+      }
+    }
+  }
+
+  .coursepricesec{
+
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+  
+  .coursePrice{
+   display: flex;
+   align-items: center;
+   justify-content: end;
+
+   p{
+    margin:0px;
+    padding-right: 10px;
+   }
+   .delete{
+    
+          color:#E7622E;
+          border-color: #E7622E;
+   }
+   
+
+
+  }
+  
+
+}
+
+.enrollMain {
+  margin: 0px;
+  background: #f3f4f9;
+  padding: 8px 5px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+
+  .enrollList {
+    display: flex;
+    align-items: center;
+  
+    :global(.form-label) {
+      margin: 0;
+      margin-right: 15px;
+      min-width: 100px;
+      font-size: 14px;
+    }
+    .formenroll {
+      margin-right: 15px;
+      margin-bottom: 0px;
+      width: 100%;
+    }
+  }
+
+}
+
+.courseDtlM {
+  margin: 0px;
+  background: #dcdcdc;
+  border: 1px solid #e0e0e0;
+  padding: 8px 5px 5px 5px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+.addRow {
+  text-decoration: none;
+  color: var(--Main);
+  justify-content: end;
+  display: flex;
+
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0em;
+
+  &:hover {
+    color: var(--Main);
+  }
+}

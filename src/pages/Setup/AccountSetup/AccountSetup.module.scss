@@ -1,0 +1,97 @@
+.uploadData {
+  h5 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: flex;
+      color: #7f8699;
+      line-height: 25px;
+      font-size: 14px;
+
+      span {
+        width: 200px;
+      }
+      strong {
+        color: #1d1d1d;
+        font-weight: 600;
+      }
+      a {
+        color: var(--Main);
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.addedSocial {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    a {
+      display: flex;
+      color: var(--Main);
+      text-decoration: none;
+      align-items: center;
+      margin-bottom: 10px;
+
+      .iconBox {
+        font-size: 20px;
+        margin-right: 10px;
+        line-height: 0;
+      }
+    }
+  }
+}
+
+.tabpositionbtn {
+  display: flex;
+  position: relative;
+  top: -106px !important;
+  right: 176px;
+  justify-content: end;
+  padding: 0px !important;
+}
+
+.studentTabbar {
+  background-color: #c8ccd071;
+
+  margin: 0px auto;
+  display: inline-flex;
+  border-radius: 8px;
+  padding: 3px 0px;
+
+  .tabbaritem {
+    a {
+      margin: 0px !important;
+      border: none !important;
+      background: transparent !important;
+      top: 0 !important;
+    }
+  }
+}
+
+/*=======================================================
+//////////////RESPONSIVE MEDIA QUERY START///////////////
+=======================================================*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .studentTabbar {
+    .tabbaritem {
+      width: 118px;
+    }
+  }
+  .tabpositionbtn {
+    top: 0 !important;
+    right: -8px;
+    justify-content: end;
+    padding: 0px !important;
+  }
+}

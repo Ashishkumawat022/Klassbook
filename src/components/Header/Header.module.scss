@@ -1,0 +1,262 @@
+@import "../../variables.module.scss";
+@import "../../fonts.module.scss";
+
+.mainHeader {
+  padding: 8px 20px;
+  background: linear-gradient(0deg, #E6EAF0, #E6EAF0), linear-gradient(0deg, #E3E7EE, #E3E7EE), #DFE3E9;
+  box-shadow: 0 0 10px #b0b0b0;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+
+  .mobileHeader {
+    display: none;
+  }
+
+ .logo {
+    margin-right: 20px;
+    width: 25px;
+    text-align: center;
+
+    img {
+      height: 24px;
+    }
+ }
+ .businessName {
+  font-size: 18px;
+  font-weight: 600;
+ }
+
+  .infoheaderRight {
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: right;
+      align-items: center;
+
+      li {
+        margin-left: 40px;
+        font-size: 14px;
+
+        :global(.dropdown) {
+
+          :global(.dropdown-toggle) {
+            padding: 0px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            white-space: normal !important;
+
+            img {
+              height: 30px;
+              width: 30px;
+              border: 1px solid #7F8699;
+              border-radius: 50px;
+              object-fit: cover;
+            }
+            
+
+            &::after {
+              display: none;
+            }
+            &:active {
+              border: none;
+            }
+
+            &:focus {
+              box-shadow: none;
+              outline: none;
+            }
+            
+            .menuTT {
+              font-size: 13px;
+              margin-left: 6px;
+            }
+            .arrow {
+              margin-left: 10px;
+            }
+          }
+
+          :global(.dropdown-menu) {
+            background-color:#F3F4F9;
+            border-color: #F3F4F9;
+            color: #333;
+            min-width: 250px;
+            border-radius: 8px;
+            margin-right: 2px !important;
+            padding: 0px;
+
+            :global(.dropdown-item) {
+              color: #333;
+              padding: 12px 15px;
+              font-size: 14px;
+
+              &.borderM {
+                border-bottom: 1px solid var(--Main);
+                padding: 15px 15px;
+              }
+
+              &.pSpace {
+                margin-top: 10px;
+              }
+
+              p {
+                margin-bottom: 5px;
+                font-size: 14px;
+              }
+
+              h5 {
+                margin: 0;
+                font-size: 16px;
+                font-weight: normal;
+              }
+
+              &:hover,
+              &:focus {
+                background: transparent;
+              }
+            }
+          }
+        }
+
+       
+      }
+    }
+  }
+}
+
+
+
+
+/*=======================================================
+//////////////RESPONSIVE MEDIA QUERY START///////////////
+=======================================================*/
+@media (max-width: 767px) {
+  .mainHeader {
+    margin-left: 0px;
+    padding: 0px 0px;
+    margin-top: 56px;
+
+    .headerMobile {
+      display: none;
+      position: fixed;
+      top: 80px;
+      left: 0px;
+      background: var(--Main);
+      padding: 15px 15px;
+      z-index: 99;
+      transition: 0.5s;
+      opacity: 0;
+
+      &.show {
+        top: 56px;
+        opacity: 1;
+        box-shadow: 0 5px 5px -4px #a6a6a6;
+      }
+    }
+
+    .headerRight {
+      ul {
+        li {
+          margin-left: 20px;
+        }
+      }
+    }
+
+    .mobileHeader {
+      background-color: #fff;
+      padding: 15px 15px 15px 15px;
+      color: var(--Color);
+      margin: 0;
+      align-items: center;
+      position: fixed;
+      left: 0;
+      width: 100%;
+      top: 0;
+      z-index: 99;
+      display: flex;
+
+      .navlogo {
+        .logoIcon {
+          height: 30px;
+        }
+      }
+      .hembugmenu {
+        font-size: 20px;
+      }
+      .moreMenu {
+        text-align: right;
+
+        .moreIcon {
+          font-size: 20px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .mainHeader {
+    margin-left: 0px;
+    padding: 0px 0px;
+    margin-top: 56px;
+
+    .headerMobile {
+      display: none;
+      position: fixed;
+      top: 80px;
+      left: 0px;
+      background: var(--Main);
+      padding: 15px 15px;
+      z-index: 99;
+      transition: 0.5s;
+      opacity: 0;
+
+      &.show {
+        top: 56px;
+        opacity: 1;
+        box-shadow: 0 5px 5px -4px #a6a6a6;
+      }
+    }
+
+    .headerRight {
+      ul {
+        li {
+          margin-left: 20px;
+        }
+      }
+    }
+
+    .mobileHeader {
+      background-color: #fff;
+      padding: 15px 15px 15px 15px;
+      color: var(--Color);
+      margin: 0;
+      align-items: center;
+      position: fixed;
+      left: 0;
+      width: 100%;
+      top: 0;
+      z-index: 99;
+      display: flex;
+
+      .navlogo {
+        .logoIcon {
+          height: 30px;
+        }
+      }
+      .hembugmenu {
+        font-size: 20px;
+      }
+      .moreMenu {
+        text-align: right;
+
+        .moreIcon {
+          font-size: 20px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

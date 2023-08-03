@@ -1,0 +1,97 @@
+.uploadData {
+
+    h5 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            display: flex;
+            color: #7F8699;
+            line-height: 25px;
+            font-size: 14px;
+            
+            span {
+                width: 100px;
+            }
+            strong {
+                color: #1D1D1D;
+                font-weight: 600;
+            }
+            a {
+                color: var(--Main);
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.addedSocial {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+
+        a {
+            display: flex;
+            color: var(--Main);
+            text-decoration: none;
+            align-items: center;
+            margin-bottom: 10px;
+
+            .iconBox {
+                font-size: 20px;
+                margin-right: 10px;
+                line-height: 0;
+            }
+        }
+    }
+}
+
+
+
+
+.studentsCount{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            display: flex;
+            color: #7F8699;
+            line-height: 25px;
+            font-size: 14px;
+            
+            strong {
+                color: #1D1D1D;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+
+/*=======================================================
+//////////////RESPONSIVE MEDIA QUERY START///////////////
+=======================================================*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .uploadData{
+        ul{
+            li{
+                line-height: 35px;
+            }
+        }
+    }
+  
+}

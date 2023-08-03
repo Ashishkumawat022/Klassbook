@@ -1,0 +1,96 @@
+
+.addRow {
+    text-decoration: none;
+    color: var(--Main);
+    justify-content: end;
+    display: flex;
+  
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0em;
+  
+    &:hover {
+      color: var(--Main);
+    }
+  }
+  
+  .invoiceBox{
+    padding: 0px 20px;
+    border-bottom: 1px solid #d5d5d5;
+    margin-bottom: 20px;
+  
+    .boxCard{
+      display: flex;
+      align-items: center;
+      position: relative;
+      margin-top: 15px;
+      margin-bottom: 15px;
+  
+      .cardBg{
+        background: #F3F4F9;
+        width: 60px;
+        height: 60px;
+        line-height: 80px;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: grey;
+        font-weight: 600;
+        margin-right: 10px;
+      }
+      .invoicedAmount{
+        span{
+          color: #7F8699;
+          font-weight: 600;
+          font-size: 12px;
+  
+          b{
+            color: #000;
+          }
+        }
+  
+        h5{
+          color: #000000;
+          font-weight: 600;
+          font-size: 18px;
+          margin: 0px;
+  
+          span{
+            margin-left: 6px;
+          }
+        }
+      }
+  
+      .grfBox{
+          position: absolute;
+          right: 0px;
+          top: 5px;
+          transform: translate(-20%, -0%);
+
+            .grfPoint{
+              display: flex;
+              align-items: center;
+              padding: 6px 8px;
+              background: rgba(26, 206, 123, 0.2);
+              border-radius: 8px;
+              font-size: 12px;
+  
+              img{
+                margin-right: 6px;
+                height: 10px;
+              }
+            }
+      }
+    }
+  }
+  
+  
+  /*=======================================================
+  //////////////RESPONSIVE MEDIA QUERY START///////////////
+  =======================================================*/
+  @media (max-width: 767px) {
+  }
+  

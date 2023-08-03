@@ -1,0 +1,227 @@
+.uploadData {
+  p {
+    color: var(--Main);
+  }
+
+  h5 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: flex;
+      color: #7f8699;
+      line-height: 25px;
+      font-size: 14px;
+
+      span {
+        width: 100px;
+      }
+      strong {
+        color: #1d1d1d;
+        font-weight: 600;
+      }
+      a {
+        color: var(--Main);
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.addedSocial {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    a {
+      display: flex;
+      color: var(--Main);
+      text-decoration: none;
+      align-items: center;
+      margin-bottom: 10px;
+
+      .iconBox {
+        font-size: 20px;
+        margin-right: 10px;
+        line-height: 0;
+      }
+    }
+  }
+}
+
+.studentsCount {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: flex;
+      color: #7f8699;
+      line-height: 25px;
+      font-size: 14px;
+
+      strong {
+        color: #1d1d1d;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.addRow {
+  text-decoration: none;
+  color: var(--Main);
+  justify-content: end;
+  display: flex;
+
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0em;
+
+  &:hover {
+    color: var(--Main);
+  }
+}
+
+.studenteditIcon {
+  min-width: 135px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  border: none;
+  color: var(--Main) !important;
+  padding: 0px;
+  font-size: 14px;
+  margin-left: 10px;
+  float: right;
+  background-color: #ffffff !important;
+
+  img {
+    height: 10px;
+  }
+}
+
+.otherNote {
+  border-bottom: 1px solid #c7c5c5;
+  padding: 10px 0px 15px 0px;
+
+  p {
+    strong {
+      font-weight: 600;
+    }
+    span {
+      color: var(--Main);
+    }
+  }
+}
+
+.studentbanner {
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+.viewList {
+  margin-top: 15px;
+}
+
+.studentadmission {
+  background: white;
+  display: flex;
+  padding: 22px 10px;
+  border-radius: 21px;
+  border-left: 8px solid;
+  border-color: var(--Main);
+
+  .bannerinside {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  ul {
+    li {
+      span {
+        width: 150px;
+      }
+    }
+  }
+}
+
+.btnlist {
+  ul {
+    display: flex;
+    padding: 0;
+    flex-wrap: wrap !important;
+  }
+  li {
+    list-style: none;
+    padding-right: 5px;
+    padding-top: 10px;
+  }
+}
+
+.studentTabbar {
+  background-color: white;
+
+  margin: 0px auto;
+  display: inline-flex;
+  border-radius: 8px;
+  padding: 3px 0px;
+
+  .tabbaritem {
+
+    a {
+      margin: 0px !important;
+      border: none !important;
+      background: transparent !important;
+      top: 0 !important;
+    }
+  }
+}
+
+
+
+.rightsec {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    li {
+      list-style: none;
+    }
+  }
+}
+
+/*=======================================================
+//////////////RESPONSIVE MEDIA QUERY START///////////////
+=======================================================*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .uploadData {
+    ul {
+      li {
+        line-height: 35px;
+      }
+    }
+  }
+}

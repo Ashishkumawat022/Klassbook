@@ -1,0 +1,132 @@
+.uploadData {
+
+    h5 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            display: flex;
+            color: #7F8699;
+            line-height: 25px;
+            font-size: 14px;
+            
+            span {
+                width: 100px;
+            }
+            strong {
+                color: #1D1D1D;
+                font-weight: 600;
+            }
+            a {
+                color: var(--Main);
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.addedSocial {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+
+        a {
+            display: flex;
+            color: var(--Main);
+            text-decoration: none;
+            align-items: center;
+            margin-bottom: 10px;
+
+            .iconBox {
+                font-size: 20px;
+                margin-right: 10px;
+                line-height: 0;
+            }
+        }
+    }
+}
+
+.studentsCount{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            display: flex;
+            color: #7F8699;
+            line-height: 25px;
+            font-size: 14px;
+            
+            strong {
+                color: #1D1D1D;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+
+// buttons 
+.studenteditIcon {
+    width: 175px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // background: linear-gradient(0deg, #F3F4F9, #F3F4F9), linear-gradient(0deg, #EFEEF3, #EFEEF3), linear-gradient(0deg, #EFEEF3, #EFEEF3), linear-gradient(180deg, rgba(239, 238, 243, 0.27) 0%, rgba(239, 238, 243, 0.29) 100%), #DDE1EB !important;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    border: none;
+    color: var(--Main)!important;
+    padding: 0px;
+    font-size: 14px;
+    margin-left: 10px;
+    float: right;
+    background-color: #ffffff !important;
+  }
+
+
+// add class details page 
+.addRow {
+    text-decoration: none;
+    color: var(--Main);
+    justify-content: end;
+    display: flex;
+  
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0em;
+  
+    &:hover {
+      color: var(--Main);
+    }
+  }
+
+/*=======================================================
+//////////////RESPONSIVE MEDIA QUERY START///////////////
+=======================================================*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .uploadData{
+        ul{
+            li{
+                line-height: 35px;
+            }
+        }
+    }
+  
+}
